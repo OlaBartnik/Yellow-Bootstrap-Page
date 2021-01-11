@@ -1,8 +1,8 @@
-import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap';
 
 import {test, test2} from "./test";
 
-console.log('test')
+console.log('test');
 
 document.addEventListener("DOMContentLoaded", function() {
 

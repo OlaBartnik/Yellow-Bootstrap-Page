@@ -1,11 +1,4 @@
-// Custom.scss
-// Option A: Include all of Bootstrap
-
-@import "node_modules/bootstrap/scss/bootstrap";
-
 //variable
 @import "variables";
-@import "mixins";
 
-//reset, normalize, helper-class
-@import "partials/normalize";
+@import "node_modules/bootstrap/scss/bootstrap";
