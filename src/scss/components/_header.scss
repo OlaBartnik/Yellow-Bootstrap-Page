@@ -1,0 +1,27 @@
+.navbar {
+    background-color: shade-color($body-bg, 5%);
+
+}
+
+@include media-breakpoint-up(md) {
+    .nav-item-border {
+        border-right: 1px solid rgba($white, $alpha: 0.3);
+
+    }
+
+    li.nav-item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    li.nav-item:hover {
+        background-color: $white;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
