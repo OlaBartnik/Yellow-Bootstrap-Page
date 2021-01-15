@@ -1,0 +1,14 @@
+.btn-dark,
+.btn-light {
+    transition: 0.5s;
+}
+
+.btn-dark:hover {
+    background-color: $white;
+    color: $dark;
+}
+
+.btn-light:hover {
+    background-color: $dark;
+    color: $white;
+}

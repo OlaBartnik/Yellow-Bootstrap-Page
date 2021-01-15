@@ -5,28 +5,22 @@
 
 }
 
-@include media-breakpoint-up(md) {
-    .nav-item-border {
-        border-right: 1px solid rgba($white, $alpha: 0.3);
+.nav-item-border {
+    border-right: 1px solid rgba($white, $alpha: 0.3);
 
-    }
-
-    li.nav-item {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    li.nav-item:hover {
-        background-color: $white;
-    }
 }
 
-@include media-breakpoint-down(md) {
-    .navbar {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+li.nav-item:hover {
+    background-color: $white;
 }
+
+
+li.nav-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 
 // hero banner
 
@@ -34,11 +28,66 @@
 .hero {
     background-image: url(../images/banner-bg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom 35% center;
+
+}
+
+.banner_text {
+    top: 40%
+}
+
+.btn_hero {
+    width: 30%;
+
 
 }
 
 .arrow {
-    width: 35px;
+    width: 40px;
     height: auto;
+}
+
+
+
+// media
+
+@include media-breakpoint-down(xl) {
+
+
+    .btn_hero {
+        width: 40%;
+
+    }
+
+}
+
+@include media-breakpoint-down(lg) {
+
+
+    .btn_hero {
+        width: 45%;
+
+    }
+
+}
+
+@include media-breakpoint-down(md) {
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 1;
+
+    }
+
+    li.nav-item {
+        padding-left: 15px;
+
+    }
+
+
+    .btn_hero {
+        width: 80%;
+        margin: 0 auto !important;
+    }
+
 }
