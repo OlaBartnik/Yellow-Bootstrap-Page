@@ -1,5 +1,7 @@
+// navbarr
+
 .navbar {
-    background-color: shade-color($body-bg, 5%);
+    background-color: rgba($black, $alpha: 0.2);
 
 }
 
@@ -24,4 +26,19 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
+}
+
+// hero banner
+
+
+.hero {
+    background-image: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.arrow {
+    width: 35px;
+    height: auto;
 }
