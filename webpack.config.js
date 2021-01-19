@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/js/app.js',
     output: {
         filename: "bundle.min.js",
-        path: path.resolve(__dirname, "./dist/js")
+        path: path.resolve(__dirname, "./docs/js")
     },
     watch: false,
     mode: 'development',

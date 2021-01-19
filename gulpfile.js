@@ -15,7 +15,7 @@ sass.compiler = require('sass');
 const server = (cb) => {
     browserSync.init({
         server: {
-            baseDir: "./dist"
+            baseDir: "./docs"
         },
         notify: false,
         //host: "192.168.0.24",
@@ -43,7 +43,7 @@ const css = function() {
         }))
         .pipe(csso())
         .pipe(sourcemaps.write("."))
-        .pipe(gulp.dest("dist/css"))
+        .pipe(gulp.dest("docs/css"))
         .pipe(browserSync.stream());
 };
 
@@ -62,7 +62,7 @@ const html = function(cb) {
             prefix: '@@',
             basepath: '@file'
         }))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('docs'))
 };
 
 const htmlReload = function(cb) {
