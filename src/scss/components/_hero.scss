@@ -15,7 +15,7 @@ li.nav-item:hover {
 }
 
 
-li.nav-item {
+.hero li.nav-item {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -79,7 +79,12 @@ li.nav-item {
 
     }
 
-    li.nav-item {
+    .nav-item-border {
+        border-right: 0px;
+
+    }
+
+    .hero li.nav-item {
         padding-left: 15px;
 
     }
